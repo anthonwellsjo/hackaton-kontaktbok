@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    color: Black;
+}
+
 html, body 
 {
     margin: 0;
@@ -47,6 +52,35 @@ html, body
     background-color: rgba(0, 0, 0, .6);
     background-image: url("mainheader.jpg");
     background-blend-mode: multiply;
-    background-size: cover;
     padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container 
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.6em;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.innerframe {
+    width: 30%;
+    min-width: 350px;
+    height: 80%;
+    background-color: lightyellow;
+    box-shadow: 10px 15px gray;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid lightgrey;
 }
