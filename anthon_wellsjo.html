@@ -15,8 +15,9 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;   
+            align-items: center;
         }
+
         .innerframe {
             width: 30%;
             min-width: 350px;
@@ -28,9 +29,23 @@
             border: 1px solid lightgrey;
         }
 
-        .list {
-            width: 200px;  
+        .lista {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
         }
+
+        .list {
+            width: 200px;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            transition: color .5s;
+            color: lightcoral;
+        }
+        
     </style>
 </head>
 
@@ -47,12 +62,14 @@
                 <br>
                 <br>
                 <h3>Är mer eller mindre duktig på:</h3>
-                <ol class="list">
-                    <li class="list-item">Programmering</li>
-                    <li class="list-item">Kite surf</li>
-                    <li class="list-item">Vara pappa</li>
-                    <li class="list-item">Spela gitarr</li>
-                </ol>
+                <div class="lista">
+                    <ol class="list">
+                        <li class="list-item">Programmering</li>
+                        <li class="list-item">Kite surf</li>
+                        <li class="list-item">Vara pappa</li>
+                        <li class="list-item">Spela gitarr</li>
+                    </ol>
+                </div>
                 <br>
                 <br>
                 <a href="https://github.com/anthonwellsjo"><strong>GIT</strong></a>
